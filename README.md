@@ -1,3 +1,4 @@
+![Alt text](aks-consul-template-vault-agent-dotnet-mssql.png?raw=true "Title")
 A Demo to showcase dynamic configuration with settings and secrets for a .NET Application using
  1. Consul 
  2. Consul KV
