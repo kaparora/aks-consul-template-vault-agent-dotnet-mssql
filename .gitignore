@@ -20,3 +20,5 @@ dotnetapp/projectapi/obj
 dotnetapp/projectapi/obj/*
 dotnetapp/projectapi/bin
 dotnetapp/projectapi/bin/*
+
+.DS_Store
