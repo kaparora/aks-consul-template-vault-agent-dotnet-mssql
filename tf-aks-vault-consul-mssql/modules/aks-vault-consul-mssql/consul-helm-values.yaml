@@ -1,0 +1,22 @@
+global:
+  datacenter: dc1
+  image: "consul:1.9.4"
+  imageK8S: "hashicorp/consul-k8s:0.25.0"
+server:
+  replicas: 1
+  bootstrapExpect: 1
+client:
+  enabled: true
+  grpc: true
+ui:
+  enabled: true
+  service:
+    type: "LoadBalancer"
+connectInject:
+  enabled: true
+syncCatalog:
+  enabled: false
+  toConsul: true
+  toK8S: false
+  default: true
+  consulNodeName: k8s-sync

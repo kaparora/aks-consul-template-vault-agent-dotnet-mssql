@@ -1,0 +1,15 @@
+ui:
+  enabled: true
+  serviceType: "LoadBalancer"
+server:
+  dev:
+    enabled: true
+    devRootToken: "root"
+  service:
+    enabled: true
+  image:
+    repository: "vault"
+    tag: "1.7.3"
+  annotations:
+    consul.hashicorp.com/connect-inject: "true"
+    consul.hashicorp.com/connect-service-upstreams: "mssql:1433"

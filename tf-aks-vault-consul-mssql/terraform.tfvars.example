@@ -1,0 +1,5 @@
+prefix="kapil"
+location="westeurope"
+kubernetes_client_id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+kubernetes_client_secret="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+

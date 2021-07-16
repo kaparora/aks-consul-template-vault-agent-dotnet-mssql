@@ -1,0 +1,22 @@
+.terraform/
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+.env
+
+*.locl.hcl
+
+*.tfplan
+
+.vscode/
+**/.vscode/*
+
+dotnetapp/projectapi/obj
+dotnetapp/projectapi/obj/*
+dotnetapp/projectapi/bin
+dotnetapp/projectapi/bin/*

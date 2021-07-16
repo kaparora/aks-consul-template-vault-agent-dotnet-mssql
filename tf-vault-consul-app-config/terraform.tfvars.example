@@ -1,0 +1,12 @@
+consul-url = "http://XX.XX.179.192:80"
+kubeconfig = [
+  {
+    "client_certificate" = ""
+    "client_key" = ""
+    "cluster_ca_certificate" = ""
+    "host" = "https://kapil-xxxx-xxxxx.hcp.westeurope.azmk8s.io:443"
+    "password" = ""
+    "username" = "clusterUser_kapil-demo-resources_xxxx-xxxx"
+  },
+]
+vault-url = "http://XX.XX.xxx.xxx:8200"

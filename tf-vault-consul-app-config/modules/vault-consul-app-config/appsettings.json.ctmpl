@@ -1,0 +1,18 @@
+{
+    "Logging": {
+    "LogLevel": {
+        "Default": "Information",
+        "Microsoft": "Warning",
+        "Microsoft.Hosting.Lifetime": "Information"
+    }
+    },
+    "MyId":  "{{ key "hashicorp/kapil/dotnet/myId" }}",
+    "MyYearOfFirstCommit":  "{{ key "hashicorp/kapil/dotnet/myYearOfFirstCommit" }}",
+    "MyGitHubLink": "{{ key "hashicorp/kapil/dotnet/myGitHubLink" }}",
+    "AllowedHosts": "*",
+    "ConnectionStrings": {
+    {{ with secret "database/mssql/creds/dotnet-app" -}}
+    "Database": "Server=localhost;Database=HashiCorp;user id={{ .Data.username }};password={{ .Data.password }}"
+    {{- end }}
+    }
+}
